@@ -34,9 +34,6 @@ const InfoModal = ({
         <div className='text-text-secondary system-xl-semibold'>{data?.title}</div>
         <div className='text-text-tertiary system-xs-regular'>
           {/* copyright */}
-          {data?.copyright && (
-            <div>© {(new Date()).getFullYear()} {data?.copyright}</div>
-          )}
           {data?.custom_disclaimer && (
             <div className='mt-2'>{data.custom_disclaimer}</div>
           )}
