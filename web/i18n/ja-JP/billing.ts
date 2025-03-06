@@ -150,7 +150,7 @@ const translation = {
         'エンタープライズ限定の機能',
         '複数のワークスペースと企業の管理',
         'SSO',
-        'Dify Partnersによる交渉済みのSLA',
+        'AIGC_lab Partnersによる交渉済みのSLA',
         '高度なセキュリティ',
         'Dify公式によるアップデートとメンテナンス',
         '専門的な技術サポート',

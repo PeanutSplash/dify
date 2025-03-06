@@ -16,7 +16,7 @@ const translation = {
     },
   },
   apps: {
-    title: 'Razišči aplikacije Dify',
+    title: 'Razišči aplikacije AIGC_lab',
     description: 'Uporabite te predloge aplikacij takoj ali prilagodite svoje aplikacije na podlagi predlog.',
     allCategories: 'Priporočeno',
   },
