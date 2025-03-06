@@ -31,7 +31,7 @@ export default async function SignInLayout({ children }: any) {
           >
             <div className="flex flex-col md:w-[400px]">{children}</div>
           </div>
-          <div className="px-8 py-6 system-xs-regular text-text-tertiary flex items-center gap-2">
+          <div className="px-4 md:px-8 py-4 md:py-6 system-xs-regular text-text-tertiary flex flex-col md:flex-row items-center gap-2 text-left">
             Copyright© 2011-{new Date().getFullYear()}{' '}
             深圳云里物联科技有限公司.All Rights Reserved.
             <a
