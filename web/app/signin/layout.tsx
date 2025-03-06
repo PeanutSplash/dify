@@ -45,7 +45,7 @@ export default async function SignInLayout({ children }: any) {
                 alt="ICP备案"
                 className="w-4 h-4"
               />
-              粤ICP备14097764号-1{' '}
+              粤ICP备14097764号-2{' '}
             </a>
           </div>
         </div>
