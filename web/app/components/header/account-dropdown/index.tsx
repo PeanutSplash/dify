@@ -154,12 +154,12 @@ export default function AppSelector({ isMobile }: IAppSelector) {
                         className={classNames(itemClassName, 'group justify-between',
                           active && 'bg-state-base-hover',
                         )}
-                        href='https://github.com/langgenius/dify/stargazers'
+                        href='https://github.com/langgenius/dify'
                         target='_blank' rel='noopener noreferrer'>
-                        <RiGithubLine className='flex-shrink-0 size-4 text-text-tertiary' />
-                        <div className='flex-grow system-md-regular text-text-secondary px-1'>{t('common.userProfile.github')}</div>
+                        <RiGithubLine className='shrink-0 size-4 text-text-tertiary' />
+                        <div className='grow system-md-regular text-text-secondary px-1'>{t('common.userProfile.github')}</div>
                         <div className='flex items-center gap-0.5 px-[5px] py-[3px] border border-divider-deep rounded-[5px] bg-components-badge-bg-dimm'>
-                          <RiStarLine className='flex-shrink-0 size-3 text-text-tertiary' />
+                          <RiStarLine className='shrink-0 size-3 text-text-tertiary' />
                           <GithubStar className='system-2xs-medium-uppercase text-text-tertiary' />
                         </div>
                       </Link>}
