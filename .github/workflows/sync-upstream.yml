@@ -1,0 +1,25 @@
+name: "同步上游仓库"
+
+on:
+  schedule:
+    - cron: "0 2 * * *" # 每天凌晨2点运行
+  workflow_dispatch: # 支持手动触发
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    name: 同步上游仓库的最新提交
+
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+
+      - name: 同步上游更改
+        uses: aormsby/Fork-Sync-With-Upstream-action@v3.4.1
+        with:
+          target_sync_branch: main # 需要同步的分支名称,根据实际情况修改
+          target_repo_token: ${{ secrets.GITHUB_TOKEN }}
+          upstream_sync_branch: main # 上游仓库的分支名称,根据实际情况修改
+          upstream_sync_repo: langgenius/dify # 替换为上游仓库的 owner/repo
